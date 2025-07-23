@@ -30,6 +30,6 @@ This project analyzes historical weather data from Seattle to explore patterns a
 
 ## Contact
 For questions or feedback, reach out:  
-varnika.mulay@example.com  
+varni.mulay@gmail.com  
 [LinkedIn](https://www.linkedin.com/in/varnika-mulay)
 
