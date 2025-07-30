@@ -6,12 +6,12 @@ This project presents a comparative analysis of various deep learning architectu
 
 The implementation is divided into two major parts based on whether image preprocessing is applied:
 
-### ✅ With Preprocessing
+### With Preprocessing
 - **WBC_CNN_GAN_ResNet_Preprocessed.ipynb**
 - **WBC_VGG19_Preprocessed.ipynb**
 - **WBC_MobileNet_Preprocessed.ipynb**
 
-### ✅ Without Preprocessing
+### Without Preprocessing
 - **WBC_CNN_GAN_ResNet_Unprocessed.ipynb**
 - **WBC_VGG19_Unprocessed.ipynb**
 - **WBC_MobileNetV2_Unprocessed.ipynb**
@@ -55,14 +55,14 @@ The implementation is divided into two major parts based on whether image prepro
 
 | Model                  | Preprocessing | Train Acc | Val Acc | Test Acc | Observations |
 |------------------------|----------------|-----------|---------|----------|--------------|
-| CNN                    | ✅ Yes         | 85.96%    | 87.29%  | 87.28%   | Good performance with enhanced features |
-| CNN                    | ❌ No          | 86.46%    | 89.00%  | 88.99%   | Slightly better without preprocessing |
-| GAN + ResNet           | ✅ Yes         | 94.57%    | 88.00%  | 89.14%   | Best preprocessed result |
-| GAN + ResNet           | ❌ No          | 96.64%    | 94.28%  | **95.42%**   | **Top overall performer** |
-| VGG19                  | ✅ Yes         | 74.55%    | 77.14%  | 74.57%   | Moderate performance |
-| VGG19                  | ❌ No          | 80.27%    | 77.86%  | 80.71%   | Preprocessing slightly hurt performance |
-| MobileNetV2            | ✅ Yes         | 18.84%    | -       | 20.00%   | Significantly underperformed |
-| MobileNetV2            | ❌ No          | 96.46%    | -       | 94.29%   | Surprisingly high accuracy |
+| CNN                    | Yes         | 85.96%    | 87.29%  | 87.28%   | Good performance with enhanced features |
+| CNN                    | No          | 86.46%    | 89.00%  | 88.99%   | Slightly better without preprocessing |
+| GAN + ResNet           | Yes         | 94.57%    | 88.00%  | 89.14%   | Best preprocessed result |
+| GAN + ResNet           | No          | 96.64%    | 94.28%  | **95.42%**   | **Top overall performer** |
+| VGG19                  | Yes         | 74.55%    | 77.14%  | 74.57%   | Moderate performance |
+| VGG19                  | No          | 80.27%    | 77.86%  | 80.71%   | Preprocessing slightly hurt performance |
+| MobileNetV2            | Yes         | 18.84%    | -       | 20.00%   | Significantly underperformed |
+| MobileNetV2            | No          | 96.46%    | -       | 94.29%   | Surprisingly high accuracy |
 
 > **Conclusion**: The model combining **GAN + ResNet without preprocessing** achieved the best performance with a **test accuracy of 95.42%**. Preprocessing techniques did not always improve results and, in some cases (e.g., MobileNetV2), led to a significant drop in accuracy.
 
